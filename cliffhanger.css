@@ -1,0 +1,29 @@
+.image-container {
+    width: 2000px;
+    height: 1655px;
+    background-image: url('mountain.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.absolute-image {
+    position: absolute;
+    bottom: 642px;
+    left: 378px;
+}
+
+.rotating {
+    animation: rotate 1s forwards;
+    transform-origin: 50% 100%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
